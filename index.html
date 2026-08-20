@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#131212] text-white overflow-x-hidden font-sans antialiased">
+
+  <header class="fixed top-0 left-0 w-full bg-[#131212]/90 backdrop-blur-md border-b border-gray-800/80 z-50">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center h-20">
+      <div>
+        <div class="text-2xl font-bold text-white tracking-tight leading-none">
+          Clique.
+        </div>
+        <span class="text-[9px] tracking-[0.2em] text-orange-500 font-bold block uppercase mt-1">UX & DESIGN</span>
+      </div>    
+      <div class="hidden md:flex items-center gap-8">
+        <nav class="flex gap-8 text-sm font-medium text-gray-300">
+          <a href="#" class="hover:text-white transition">Services</a>
+          <a href="#" class="hover:text-white transition">Portfolio</a>
+          <a href="#" class="hover:text-white transition">About</a>
+        </nav>
+        <button class="bg-orange-500 text-white px-5 py-2.5 text-sm font-semibold rounded-[2px] hover:bg-orange-600 transition shadow-sm cursor-pointer">
+          Request a Proposal
+        </button>
+      </div>
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none p-2 cursor-pointer">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-[#131212] border-b border-gray-800 px-6 pt-4 pb-6 space-y-4">
+      <nav class="flex flex-col gap-3 text-sm text-gray-300">
+        <a href="#" class="hover:text-white transition">Services</a>
+        <a href="#" class="hover:text-white transition">Portfolio</a>
+        <a href="#" class="hover:text-white transition">About</a>
+      </nav>
+      <button class="w-full bg-orange-500 text-white px-4 py-2.5 text-sm font-semibold rounded-[2px] hover:bg-orange-600 transition">
+        Request a Proposal
+      </button>
+    </div>
+  </header>  
+
+  <section class="relative bg-[#0d0d0d] min-h-[600px] flex items-center overflow-hidden pt-20">
+    <div class="absolute inset-y-0 right-0 w-full md:w-[55%] h-full z-0 pointer-events-none">
+      <img src="Frame 602.png" alt="Spark Background" class="w-full h-full object-cover object-right-top opacity-90">
+      <div class="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-[#0d0d0d] via-[#0d0d0d]/70 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full py-16">
+      <div class="max-w-xl space-y-6">
+        <h1 class="text-3xl sm:text-4xl lg:text-[44px] font-medium text-white tracking-tight leading-[1.2]">
+          Hi, we're Clique -<br>
+          a UX & Design Studio <br>
+          based in Melbourne.
+        </h1>
+        <p class="text-gray-300 text-sm md:text-base leading-relaxed max-w-md inline-flex items-center flex-wrap gap-1.5">
+          <span>We take websites and transform them into the digital masterpieces they deserve to be. We're here to reignite the spark in your website</span>
+          <img src="icon-18.png" alt="Fire icon" class="w-5 h-5 object-contain inline-block align-middle">
+        </p>
+        <div class="pt-2">
+          <a href="#" class="inline-flex items-center gap-2 bg-[#FF5C00] hover:bg-orange-600 text-white font-medium px-6 py-3.5 rounded-[2px] text-sm transition">
+            See how we can help <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 md:py-20 bg-[#0d0d0d]">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="flex items-center gap-2 text-white text-xs tracking-widest uppercase font-semibold mb-8 md:mb-12">
+        <span>↓</span> RECENT PROJECTS
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+        <div class="group cursor-pointer transform transition-transform duration-150 active:scale-95 hover:scale-[1.01]">
+          <div class="bg-white rounded-[2px] overflow-hidden pt-6 md:pt-10 pb-0 aspect-[16/11] flex items-end">
+            <img src="Frame 604.png" alt="Purva" class="w-full h-auto object-cover object-bottom pointer-events-none">
+          </div>
+        </div>
+        <div class="group cursor-pointer transform transition-transform duration-150 active:scale-95 hover:scale-[1.01]">
+          <div class="bg-white rounded-[2px] overflow-hidden pt-6 md:pt-10 pb-0 aspect-[16/11] flex items-end">
+            <img src="Frame 605.png" alt="InvestConnect" class="w-full h-auto object-cover object-bottom pointer-events-none">
+          </div>
+        </div>
+        <div class="group cursor-pointer transform transition-transform duration-150 active:scale-95 hover:scale-[1.01]">
+          <div class="bg-white rounded-[2px] overflow-hidden pt-6 md:pt-10 pb-0 aspect-[16/11] flex items-end">
+            <img src="Frame 606.png" alt="Qpackt" class="w-full h-auto object-cover object-bottom pointer-events-none">
+          </div>
+        </div>
+        <div class="group cursor-pointer transform transition-transform duration-150 active:scale-95 hover:scale-[1.01]">
+          <div class="bg-white rounded-[2px] overflow-hidden pt-6 md:pt-10 pb-0 aspect-[16/11] flex items-end">
+            <img src="Frame 607.png" alt="Resolvo" class="w-full h-auto object-cover object-bottom pointer-events-none">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white text-black py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-14">
+      <div class="space-y-5">
+        <div class="w-16 h-16 bg-[#FF5C00] rounded-[2px] flex items-center justify-center p-3.5">
+          <img src="icon-1.svg" alt="Comprehensive" class="w-full h-full object-contain filter brightness-0 invert">
+        </div>
+        <h3 class="text-2xl md:text-[28px] font-bold text-black tracking-tight">Comprehensive</h3>
+        <p class="text-gray-700 text-sm md:text-[15px] leading-relaxed">
+          We design across desktop and mobile to deliver designs optimised for every screen. We ensure your website designs look great across multiple devices for maximum impact and user accessibility.
+        </p>
+      </div>
+      <div class="space-y-5">
+        <div class="w-16 h-16 bg-[#FF5C00] rounded-[2px] flex items-center justify-center p-3.5">
+          <img src="icon-2.svg" alt="Flexible" class="w-full h-full object-contain filter brightness-0 invert">
+        </div>
+        <h3 class="text-2xl md:text-[28px] font-bold text-black tracking-tight">Flexible</h3>
+        <p class="text-gray-700 text-sm md:text-[15px] leading-relaxed">
+          Whether you're looking for a complete website redesign, or individual design services, our services allow you to strategically select what best fits your requirements and budget.
+        </p>
+      </div>
+      <div class="space-y-5">
+        <div class="w-16 h-16 bg-[#FF5C00] rounded-[2px] flex items-center justify-center p-3.5">
+          <img src="icon-3.svg" alt="Specialised" class="w-full h-full object-contain filter brightness-0 invert">
+        </div>
+        <h3 class="text-2xl md:text-[28px] font-bold text-black tracking-tight">Specialised</h3>
+        <p class="text-gray-700 text-sm md:text-[15px] leading-relaxed">
+          We design specifically for startups and small businesses. We're deep on the tech industry, and always ensure our website designs strongly resonate with our clients' target audiences.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#131212] pt-28 pb-36">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-[69px] items-center">
+      <div class="space-y-6">
+        <h2 class="text-3xl md:text-[40px] font-medium leading-[1.2] text-white tracking-tight">
+          We believe that good design opens up a world of opportunity
+        </h2>      
+        <p class="text-gray-300 text-sm md:text-[15px] leading-relaxed max-w-lg">
+          At Clique, we believe that thoughtful and deliberate design significantly impacts your business's reach. From increasing customer engagement to new connections and conversions, we're here to help your website reach its full potential.
+        </p>    
+        <div class="pt-2">
+          <a href="#" class="inline-flex items-center gap-2 bg-[#FF5C00] hover:bg-orange-600 text-white font-medium px-6 py-3 rounded-[2px] text-sm transition">
+            Request a Proposal <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+      <div class="rounded-[2px] overflow-hidden">
+        <img src="Frame 603png.png" alt="Office space" class="w-full h-[380px] md:h-[460px] object-cover rounded-[2px]">
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white text-black pt-[88px] pb-[132px]">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <h2 class="text-3xl md:text-[40px] font-medium leading-tight text-black mb-12 tracking-tight">
+        Something to suit everyone
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="border-2 border-black rounded-lg p-6 flex flex-col justify-between items-start bg-white h-auto">
+          <div class="w-full">
+            <div class="mb-6">
+              <img src="icon-9.svg" alt="Starter Icon" class="w-16 h-16 object-contain">
+            </div>
+            <h3 class="text-xl md:text-2xl font-medium mb-3 text-black">Starter Package</h3>
+            <p class="text-gray-600 text-sm leading-snug mb-8">
+              Designed to get you started. Ideal for startups & businesses who need designs across simple websites.
+            </p>
+          </div>
+          <a href="#" class="inline-flex items-center gap-2 bg-[#FF5C00] hover:bg-orange-600 text-white font-medium px-6 py-3 rounded-[2px] text-sm transition">
+            Learn more <span>&rarr;</span>
+          </a>
+        </div>
+        <div class="border-2 border-black rounded-lg p-6 flex flex-col justify-between items-start bg-white h-auto">
+          <div class="w-full">
+            <div class="mb-6">
+              <img src="icon-10.svg" alt="Pro Icon" class="w-16 h-16 object-contain">
+            </div>
+            <h3 class="text-xl md:text-2xl font-medium mb-3 text-black">Pro Package</h3>
+            <p class="text-gray-600 text-sm leading-snug mb-8">
+              Designed for those who need some bells and whistles. Ideal for startups & businesses who need designs for moderate websites.
+            </p>
+          </div>
+          <a href="#" class="inline-flex items-center gap-2 bg-[#FF5C00] hover:bg-orange-600 text-white font-medium px-6 py-3 rounded-[2px] text-sm transition">
+            Learn more <span>&rarr;</span>
+          </a>
+        </div>
+        <div class="border-2 border-black rounded-lg p-6 flex flex-col justify-between items-start bg-white h-auto">
+          <div class="w-full">
+            <div class="mb-6">
+              <img src="icon-11.svg" alt="Platinum Icon" class="w-16 h-16 object-contain">
+            </div>
+            <h3 class="text-xl md:text-2xl font-medium mb-3 text-black">Platinum Package</h3>
+            <p class="text-gray-600 text-sm leading-snug mb-8">
+              Designed for those after the full package. Ideal for startups & businesses who have comprehensive websites.
+            </p>
+          </div>
+          <a href="#" class="inline-flex items-center gap-2 bg-[#FF5C00] hover:bg-orange-600 text-white font-medium px-6 py-3 rounded-[2px] text-sm transition">
+            Learn more <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-[#111111] text-white py-20 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-12">
+      <div class="max-w-[580px]">
+        <h2 class="text-3xl sm:text-[36px] md:text-[40px] font-medium leading-[1.25] text-white tracking-tight">
+          Companies that invest in website<br class="hidden sm:inline"> 
+          redesigns typically see a <span class="text-[#FF5C00]">20-40%</span><br class="hidden sm:inline"> 
+          increase in revenue
+        </h2>
+        <p class="text-white text-[11px] font-bold tracking-[0.25em] uppercase mt-10">
+          HUBSPOT, 2020
+        </p>
+      </div>
+      <div class="relative w-[360px] h-[300px] shrink-0">
+        <img src="Frame 188.png" alt="Arrows" class="absolute top-0 left-[60px] w-[80px] h-[80px] object-contain">
+        <img src="Frame 189.png" alt="Plant" class="absolute top-[35px] right-[10px] w-[180px] h-[180px] object-contain">
+        <img src="Frame 187.png" alt="Bulb" class="absolute bottom-[20px] left-[10px] w-[100px] h-[100px] object-contain">
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white text-black py-20">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+      <div class="w-full md:w-1/2 shrink-0">
+        <img src="Frame 608.png" alt="Team hands" class="w-full h-auto object-cover rounded-[2px]">
+      </div>
+      <div class="w-full md:w-1/2 space-y-6">
+        <div class="space-y-3">
+          <h2 class="text-3xl sm:text-[38px] font-normal leading-[1.25] text-[#111111] tracking-tight">
+            We're grounded by the<br>Clique Difference
+          </h2>
+          <p class="text-[#555555] text-[13px] leading-relaxed max-w-[480px]">
+            The Clique Difference begins with a commitment to excellence that drives all of our designs.
+          </p>
+        </div>
+        <div class="space-y-3.5 pt-2">      
+          <div class="flex items-center gap-3.5">
+            <img src="icon-12.png" alt="Creativity" class="w-9 h-9 object-contain shrink-0">
+            <span class="text-[14px] font-medium text-[#111111]">Creativity</span>
+          </div>
+          <div class="flex items-center gap-3.5">
+            <img src="icon-13.png" alt="Quality" class="w-9 h-9 object-contain shrink-0">
+            <span class="text-[14px] font-medium text-[#111111]">Quality</span>
+          </div>
+          <div class="flex items-center gap-3.5">
+            <img src="icon-14.png" alt="Collaboration" class="w-9 h-9 object-contain shrink-0">
+            <span class="text-[14px] font-medium text-[#111111]">Collaboration</span>
+          </div>
+          <div class="flex items-center gap-3.5">
+            <img src="icon-15.png" alt="Innovation" class="w-9 h-9 object-contain shrink-0">
+            <span class="text-[14px] font-medium text-[#111111]">Innovation</span>
+          </div>
+        </div>
+        <div class="pt-4">
+          <a href="#" class="inline-flex items-center gap-2 bg-[#FF5C00] hover:bg-[#e05100] text-white text-[13px] font-medium px-6 py-3.5 rounded-[2px] transition-colors duration-200">
+            Learn about our values &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="relative bg-[#080808] text-white py-20 overflow-hidden">
+    <img src="Frame 602.png" alt="Background sparks" class="absolute top-0 right-0 h-full w-auto object-cover opacity-60 pointer-events-none z-0">
+    <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
+      <div class="flex items-center gap-2 text-[#ffffff] text-[11px] tracking-[0.25em] font-bold uppercase mb-12">
+        <span class="text-sm">↓</span> TESTIMONIALS
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
+        <div class="space-y-6">
+          <h2 class="text-3xl lg:text-[34px] font-normal leading-[1.25] text-white tracking-tight">
+            Don't just take it<br>from us...
+          </h2>
+          <div class="flex items-center gap-3 pt-2">
+            <img src="icon-16.png" alt="Star" class="w-8 h-8 object-contain">
+            <span class="text-4xl font-semibold text-white tracking-tight">4.98</span>
+          </div>
+        </div>
+        <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="bg-white text-black p-6 rounded-[2px] flex flex-col justify-between space-y-4 min-h-[320px]">
+            <div>
+              <div class="flex items-center gap-1 mb-4">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+              </div>
+              <div class="text-[13px] font-medium text-[#111111] mb-4">
+                Joseph A | <span class="text-[#555555]">Resolvo</span>
+              </div>
+              <p class="text-[12px] text-[#333333] leading-relaxed italic">
+                "The website redesign was great. Some of the challenges my website had was having a clear CTA and a user interface that clearly conveyed what the product did, Marie's design really helped with making it clear and I will be implementing the changes suggested."
+              </p>
+            </div>
+          </div>
+          <div class="bg-white text-black p-6 rounded-[2px] flex flex-col justify-between space-y-4 min-h-[320px]">
+            <div>
+              <div class="flex items-center gap-1 mb-4">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+              </div>
+              <div class="text-[13px] font-medium text-[#111111] mb-4">
+                Anthony M | <span class="text-[#555555]">InvestConnect</span>
+              </div>
+              <p class="text-[12px] text-[#333333] leading-relaxed italic">
+                "After contemplating a website update for some time, I'm very glad I did. Clique delivered a great website redesign for my business, InvestConnect. Marie's professionalism, creativity and attention to the details in my website were outstanding, I'm thrilled with the new designs."
+              </p>
+            </div>
+          </div>
+          <div class="bg-white text-black p-6 rounded-[2px] flex flex-col justify-between space-y-4 min-h-[320px]">
+            <div>
+              <div class="flex items-center gap-1 mb-4">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+                <img src="icon-17.png" alt="Star" class="w-4 h-4 object-contain">
+              </div>
+              <div class="text-[13px] font-medium text-[#111111] mb-4">
+                Łukasz W | <span class="text-[#555555]">Qpackt</span>
+              </div>
+              <p class="text-[12px] text-[#333333] leading-relaxed italic">
+                "Clique exceeded my expectations for my website's design update. The designs that Marie delivered brought my website to a new level and I'm excited to showcase it to my audience. Easy to work with and very responsive. I highly recommend Clique for web design."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white text-black pt-[112px] pb-[128px]">
+    <div class="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-12">
+      <div class="w-full md:w-1/2 space-y-[24px]">
+        <h2 class="text-3xl md:text-[40px] font-medium text-[#111111] leading-[1.2] tracking-tight">
+          Choose a design strategy<br class="hidden sm:inline"> that suits your business
+        </h2>
+        <p class="text-[#555555] text-[15px] leading-[1.6]">
+          Our package deliverables range to fit different business needs. We also offer single design services to suit businesses with targeted design objectives.
+        </p>
+        <div class="pt-[12px]">
+          <a href="#" class="inline-flex items-center gap-2 bg-[#FF5C00] hover:bg-[#e05100] text-white text-[14px] font-medium px-6 py-3.5 rounded-[2px] transition-colors duration-200">
+            See our services <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+      <div class="w-full md:w-1/2 shrink-0">
+        <img src="Frame 609.png" alt="Strategy Puzzle" class="w-full h-auto object-cover rounded-[2px]">
+      </div>
+    </div>
+  </section>
+  <section class="relative w-full h-[500px] bg-black overflow-hidden flex items-center">
+    <img src="Frame 602.png" alt="Spark background" class="absolute top-0 right-0 h-full w-auto max-w-none object-cover object-right pointer-events-none z-0">
+    <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
+      <h2 class="text-3xl sm:text-4xl md:text-[44px] font-normal text-white leading-[1.25] tracking-tight max-w-[620px]">
+        Every website has a spark<br>and we're here to bring it to life.
+      </h2>
+    </div>
+  </section>
+  <section class="bg-[#FF5C00] py-[91px]">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="bg-white rounded-[2px] p-8 md:p-[64px] text-black">
+        <h2 class="text-3xl md:text-[42px] font-medium text-[#111111] mb-4 flex items-center gap-3 tracking-tight">
+          <span>Lets work together</span>
+          <img src="icon-18.png" alt="Fire icon" class="w-8 h-8 md:w-10 md:h-10 object-contain inline-block">
+        </h2>
+        <p class="text-[#555555] text-[15px] leading-relaxed mb-8 max-w-[680px]">
+          Get in touch and we'll let you know how we can best light the spark in your website.
+        </p>
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="#" class="bg-[#FF5C00] hover:bg-[#e05100] text-white text-[14px] font-medium px-6 py-3.5 rounded-[2px] transition-colors duration-200">
+            Request a Proposal
+          </a>
+          <a href="#" class="border border-[#111111] text-[#111111] hover:bg-gray-50 text-[14px] font-medium px-6 py-3.5 rounded-[2px] inline-flex items-center gap-2 transition-colors duration-200">
+            See our services <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-[#191919] text-white pt-16 pb-0">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pb-16">
+        <div class="space-y-5">
+          <h3 class="text-xl font-medium text-white">Quick links</h3>
+          <ul class="space-y-4 text-sm text-gray-300">
+            <li><a href="#" class="hover:text-white transition">Services</a></li>
+            <li><a href="#" class="hover:text-white transition">About</a></li>
+            <li>
+              <a href="#" class="hover:text-white transition inline-flex items-center gap-2">
+                Request a Proposal <span>&rarr;</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-5">
+          <h3 class="text-xl font-medium text-white">Portfolio</h3>
+          <ul class="space-y-4 text-sm text-gray-300">
+            <li><a href="#" class="hover:text-white transition">Purva</a></li>
+            <li><a href="#" class="hover:text-white transition">InvestConnect</a></li>
+            <li><a href="#" class="hover:text-white transition">Qpackt</a></li>
+            <li><a href="#" class="hover:text-white transition">Resolvo</a></li>
+            <li>
+              <a href="#" class="hover:text-white transition inline-flex items-center gap-2 pt-2">
+                All projects <span>&rarr;</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="space-y-5">
+          <h3 class="text-xl font-medium text-white">Contact</h3>
+          <div class="space-y-4 text-sm text-gray-300">
+            <a href="https://www.instagram.com/clique_uxdesign/?hl=en" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 hover:text-white transition">
+              <img src="icon-7.svg" alt="Instagram" class="w-6 h-6 object-contain shrink-0">
+              <span>@clique_uxdesign</span>
+            </a>
+            <a href="mailto:hello@cliqueuxdesign.com" class="flex items-center gap-3 hover:text-white transition">
+              <img src="icon-8.svg" alt="Email" class="w-6 h-6 object-contain shrink-0">
+              <span>hello@cliqueuxdesign.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="pt-8 pb-12 text-[11px] text-gray-500 leading-relaxed border-t border-gray-800/60 max-w-5xl">
+        We acknowledge the Traditional Owners of the land on which we operate, the Woiwurrung and Boonwurrung (Wurundjeri) peoples of the Kulin Nation, and pay our respects to their Elders, past and present. We welcome and respect everyone equally, regardless of race, gender, sexual orientation, or background.
+      </div>
+    </div>
+    <div class="bg-[#111111] py-6 px-6 md:px-12">
+      <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-xs text-gray-400 gap-4">
+        <div>
+          &copy; 2024 Clique UX & Design. All rights reserved.
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="https://drive.google.com/drive/folders/1Sr1ANzsAmGl4L8GBn2fk56jAymJ17nAC?usp=sharing" target="_blank" rel="noopener noreferrer" class="underline hover:text-white transition">Privacy Policy</a>
+          <a href="https://drive.google.com/drive/folders/1Sr1ANzsAmGl4L8GBn2fk56jAymJ17nAC?usp=sharing" target="_blank" rel="noopener noreferrer" class="underline hover:text-white transition">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  </script>
+</body>
+</html>
